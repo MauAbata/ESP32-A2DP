@@ -99,7 +99,7 @@ class BluetoothA2DPSink {
     virtual void set_i2s_config(i2s_config_t i2s_config);
 
     /// starts the I2S bluetooth sink with the inidicated name
-    virtual void start(const char* name, bool auto_reconect=true);
+    virtual void start(const char* name, bool auto_reconect=true, esp_bt_mode_t btMode=ESP_BT_MODE_CLASSIC_BT);
 
     /// starts the I2S bluetooth sink with the inidicated name - if you release the memory a future start is not possible
     virtual void end(bool release_memory=false);
